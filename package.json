@@ -3,7 +3,7 @@
   "private": true,
   "version": "0.0.0",
   "type": "module",
-  "homepage": "/co2unter/#",
+  "homepage": "https://pawelplutauek20.github.io/co2unter/#",
   "scripts": {
     "dev": "vite",
     "build": "tsc && vite build",

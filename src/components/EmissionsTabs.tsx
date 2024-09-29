@@ -59,7 +59,7 @@ const EmissionsTabs = () => {
             jak{" "}
             <a
               style={{ color: "inherit" }}
-              href={`/tab1?query=${parkWithSimmilarEmissionsAbsorbtion?.name.toLowerCase()}`}
+              href={`/#/tab1?query=${parkWithSimmilarEmissionsAbsorbtion?.name.toLowerCase()}`}
             >
               {parkWithSimmilarEmissionsAbsorbtion?.name}
             </a>{" "}

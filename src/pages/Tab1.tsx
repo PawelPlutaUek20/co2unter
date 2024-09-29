@@ -10,7 +10,7 @@ import "./Tab1.css";
 import ParkCard from "../components/ParkCard";
 
 import parksJson from "../assets/parksWithDetails.json";
-import { useMemo, useState } from "react";
+import { useEffect, useMemo, useState } from "react";
 import { useLocation } from "react-router-dom";
 
 // Function to get query parameters
@@ -23,9 +23,18 @@ const getQueryParams = (location: any) => {
 const Tab1: React.FC = () => {
   const location = useLocation();
 
-  const [search, setSearch] = useState(
-    () => getQueryParams(location) ?? "planty"
+  const [_search, setSearch] = useState<string>();
+
+  const queryParams = useMemo(() => getQueryParams(location), [location]);
+
+  const search = useMemo(
+    () => _search ?? queryParams ?? "planty",
+    [queryParams, _search]
   );
+
+  useEffect(() => {
+    setSearch(undefined);
+  }, [queryParams]);
 
   const handleInput = (ev: Event) => {
     const target = ev.target as HTMLIonSearchbarElement;
@@ -35,6 +44,7 @@ const Tab1: React.FC = () => {
   };
 
   const results = useMemo(() => {
+    if (search === "") return parksJson;
     return parksJson.filter((d) => d.name.toLowerCase().indexOf(search) > -1);
   }, [search]);
 

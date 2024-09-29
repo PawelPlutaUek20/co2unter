@@ -48,7 +48,7 @@ const EcoTips: React.FC = () => {
         <IonGrid>
           <IonRow>
             <IonCol size="12">
-              <p>Firmy z Krakowa mogą odegrać kluczową rolę w redukcji emisji CO₂, promując zrównoważone rozwiązania transportowe. Zachęcaj pracowników do korzystania z <strong>Poola</strong>, lokalnej aplikacji do carpoolingu.</p>
+              <p>Firmy z Krakowa mogą odegrać kluczową rolę w redukcji emisji CO₂, promując zrównoważone rozwiązania transportowe. Zachęcaj pracowników do korzystania z <strong>Poola.app</strong>, lokalnej aplikacji do carpoolingu.</p>
               <IonList>
                 <IonItem>
                   <IonIcon icon={earthOutline} slot="start" />

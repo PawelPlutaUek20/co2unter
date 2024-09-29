@@ -5,20 +5,20 @@ import {
   IonTitle,
   IonToolbar,
 } from "@ionic/react";
-import EcoTips from "../components/EcoTrips";
+import EcoTips from "../components/EcoTips";
 
 const Tab3: React.FC = () => {
   return (
     <IonPage>
       <IonHeader>
         <IonToolbar>
-          <IonTitle>Ulepsz swiat</IonTitle>
+          <IonTitle>Dbaj o nasze miasto</IonTitle>
         </IonToolbar>
       </IonHeader>
       <IonContent fullscreen>
         <IonHeader collapse="condense">
           <IonToolbar>
-            <IonTitle size="large">Ulepsz swiat</IonTitle>
+            <IonTitle size="large">Dbaj o nasze miasto</IonTitle>
           </IonToolbar>
         </IonHeader>
         <EcoTips />

@@ -108,7 +108,7 @@ const VehicleEmissionsCalculator: FC<{
   const [tripFrequency, setTripFrequency] = useState(TripFrequency.OneWay);
   const [tripNb, setTripNb] = useState(1);
   const [distance, setDistance] = useState(1);
-  const [vehicleType, setVehicleType] = useState(VehicleType.Classic);
+  const [vehicleType, setVehicleType] = useState(VehicleType.Electric);
   const [fuelType, setFuelType] = useState(FuelType.Petrol);
   const [vehicleSize, setVehicleSize] = useState(VehicleSize.Medium);
 
