@@ -1,5 +1,6 @@
 import { IonCard, IonCardContent, IonCardHeader, IonCardTitle, IonGrid, IonRow, IonCol, IonIcon, IonList, IonItem, IonLabel } from '@ionic/react';
 import { busOutline, bicycleOutline, peopleOutline, bulbOutline, leafOutline, businessOutline, carOutline, cashOutline, happyOutline, earthOutline } from 'ionicons/icons';
+import co2EmissionsBySecotrSvg from "../assets/co-emissions-by-sector.svg"
 
 const EcoTips: React.FC = () => {
   return (
@@ -70,6 +71,10 @@ const EcoTips: React.FC = () => {
             </IonCol>
           </IonRow>
         </IonGrid>
+      </IonCardContent>
+
+      <IonCardContent>
+        <img src={co2EmissionsBySecotrSvg} />
       </IonCardContent>
     </IonCard>
   );
