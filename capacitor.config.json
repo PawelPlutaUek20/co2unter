@@ -1,0 +1,10 @@
+{
+  "appId": "com.co2unter.app",
+  "appName": "co2unter",
+  "webDir": "dist",
+  "plugins": {
+    "SplashScreen": {
+      "launchShowDuration": 0
+    }
+  }
+}
